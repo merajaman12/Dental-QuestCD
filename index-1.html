@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dental Quest – Become a Dental Detective</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="confetti"></div><div id="toast"></div>
+<header>
+  <a class="brand" href="#home">🦷 Dental Quest</a>
+  <nav id="nav"><a href="#how">How to play</a><a href="#play">Play</a><a href="#board">Leaderboard</a><a href="#team">Team</a><a href="#scan">Scan</a></nav>
+  <button class="btn ghost" id="snd" data-a="ts" aria-label="Sound on or off">🔊</button>
+  <button class="btn ghost" id="menu" data-a="menu" aria-label="Menu">☰</button>
+</header>
+<main>
+<section id="home" class="hero">
+  <div>
+    <h1>🦷 DENTAL QUEST</h1>
+    <h2>Become a Dental Detective &amp; Save the Smile!</h2>
+    <p>An interactive oral-health adventure created by BDS Community Dentistry students.</p>
+    <div class="row"><a class="btn pri" href="#play">START QUEST</a><a class="btn sec" href="#how">HOW TO PLAY</a></div>
+  </div>
+  <div class="mascot"><div class="bubble">Hi! I'm <b>Dr. Molar</b> 🦷<br>Ready to be a detective?</div><div id="mas"></div></div>
+</section>
+
+<section id="how">
+  <h2>How to play</h2>
+  <div class="grid3">
+    <div class="card"><div class="big">👥</div><h3>Pick your team</h3><p>Choose a team name or make your own.</p></div>
+    <div class="card"><div class="big">🎮</div><h3>Complete 5 missions</h3><p>Each mission earns points and unlocks the next one.</p></div>
+    <div class="card"><div class="big">🏆</div><h3>Collect badges</h3><p>Finish the quest to become a Dental Quest Champion!</p></div>
+  </div>
+</section>
+
+<section id="play">
+  <h2>Your quest</h2>
+  <div id="hud" class="card hud" hidden></div>
+  <div id="stage"></div>
+</section>
+
+<section id="board">
+  <h2>Classroom leaderboard</h2>
+  <div class="card tw"><table><thead><tr><th>Rank</th><th>Team</th><th>Score</th><th>Badge</th></tr></thead><tbody id="lb"></tbody></table></div>
+</section>
+
+<section id="team">
+  <h2>Meet the Dental Quest Team</h2>
+  <div class="grid3" id="tg"></div>
+</section>
+
+<section id="scan">
+  <div class="card scan">
+    <h2>SCAN. PLAY. LEARN. 🦷</h2>
+    <div class="qr"><i></i><i></i><i></i><span>QR CODE<br>HERE</span></div>
+    <p contenteditable="true" id="url">https://your-dental-quest-link.com</p>
+    <p class="hint">Replace the box above with your QR code and click the link text to type the real web address.</p>
+    <button class="btn pri noprint" onclick="window.print()">Print this poster</button>
+  </div>
+</section>
+</main>
+<footer>🦷 Dental Quest · BDS Community Dentistry · <button class="lnk" data-a="fac">Facilitator</button></footer>
+<dialog id="fac"><div id="fc"></div></dialog>
+<script src="script.js"></script>
+</body>
+</html>
